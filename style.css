@@ -1,0 +1,486 @@
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  --btn-color: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  margin: 0;
+}
+
+header .btn {
+  display: none;
+}
+
+/* header part */
+
+header {
+  height: 50px;
+  width: 100%;
+  padding-top: 15px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: var(--white);
+}
+
+/* Dropdown */
+
+.hamburger1 {
+  float: right;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.close {
+  float: right;
+  display: none;
+  padding-right: 25px;
+}
+
+.dropdown-content {
+  background-color: white;
+  text-align: center;
+  background-color: aliceblue;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px 0;
+  display: none;
+}
+
+.dropdown-content a {
+  color: var(--dark-blue);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: rgb(104, 134, 216);
+}
+
+/* next - gen digital banking part */
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-image: url("images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: contain;
+  text-align: center;
+}
+
+.container1-img .mockup {
+  top: -75px;
+  width: 100%;
+  position: relative;
+}
+
+.info {
+  margin-top: -10%;
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 40px;
+  font-weight: 300;
+  padding: 0px 10px;
+  color: var(--dark-blue);
+}
+
+p {
+  font-weight: 300;
+  color: var(--grayish-blue);
+  text-align: center;
+  padding: 15px 30px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  height: 50px;
+  width: 170px;
+  color: var(--white);
+  font-size: 20px;
+  border-radius: 30px;
+  background: var(--btn-color);
+  border: none;
+}
+.btn:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 12px 8px rgba(13, 238, 208, 0.5);
+}
+
+.info .btn {
+  margin-bottom: 130px;
+}
+
+.icons h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+.info {
+  align-self: center;
+}
+
+/* why choose Easybank part */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
+  height: auto;
+  width: 100%;
+}
+
+.card {
+  text-align: center;
+}
+
+.second {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.container2 h1 {
+  font-weight: 300;
+}
+
+h3 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+/* latest article part container-3 */
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  margin: 60px 0;
+}
+
+.cards {
+  text-align: center;
+}
+
+.container3 h1 {
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.container3 img {
+  height: 270px;
+  width: 90%;
+  border-radius:  10px 10px 0 0;
+  margin-bottom: 50px;
+  margin: 0 15px;
+}
+
+.container3 h3 {
+  text-align: left;
+  color: var(--dark-blue);
+  padding: 0 60px;
+}
+
+.container3 p {
+  padding: 0 60px;
+  margin: 15px 0;
+  margin-bottom: 70px;
+}
+
+.third-para {
+  text-align: left;
+}
+
+/* footer */
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: var(--dark-blue);
+  text-align: center;
+}
+
+.footer-logo {
+  padding-top: 35px;
+  filter: invert(100%) sepia(0%) saturate(0) hue-rotate(337deg) brightness(5);
+}
+
+footer .connect {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.connect img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+footer div {
+  color: var(--light-grayish-blue);
+  margin-top: 25px;
+}
+
+footer .btn {
+  text-align: center;
+  margin: 50px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+
+/* desktop view----------------------------------------------------- */
+
+@media (min-width: 1024px) {
+  /* header part */
+
+  .hamburger1,
+  .close {
+    display: none;
+  }
+  .container1 background-image {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--white);
+  }
+
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img {
+    margin-left: 4.5%;
+  }
+
+  header .btn {
+    display: block;
+    float: right;
+    height: 80%;
+    width: 10%;
+  }
+
+  /* container1 part --->>>  just below header */
+
+  .container1 {
+    width: 100vw;
+    flex-direction: row-reverse;
+    position: absolute;
+    margin-top: 4%;
+    display: flex;
+    background-color: red;
+    /* background-image: url("images/bg-intro-desktop.svg"); */
+    /* background-repeat: no-repeat;
+    background-position: bottom 50px;
+    background-position-x: 400px;
+    background-position-y: 30px; */
+
+
+
+    /* background-position-y:100vw ;100vw */
+  }
+
+  .container1-img {
+    background-image: url("images/bg-intro-desktop.svg");
+    background-position-y: -50px;
+    background-position-x: 40px;
+    background-repeat: no-repeat;
+    /* margin-bottom: -300px; */
+    /* background-position: bottom -50px left -50px; */
+    /* background-repeat: no-repeat; */
+    /* width: 160%; */
+    background-color: yellow;
+    display: block;
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+
+  .mockup {
+    /* display: none; */
+    position: absolute;
+    width: 120%;
+    /* margin-right: 175%; */
+    margin-top: 120%;
+    background-color: teal;
+  }
+
+  .info {
+    order: 2;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 4%;
+    margin-right: 50%;
+    padding-top: 15%;
+    padding-right: 10%;
+  }
+
+  .info .detail1 {
+    text-align: left;
+    margin-left: -30px;
+    margin-right: 10%;
+  }
+  .info .first {
+    margin-left: -1%;
+  }
+
+  /* why choose Easybank part ---->>>>   */
+
+  .container2 .second {
+    text-align: left;
+    margin-left: 1%;
+    margin: 0 5%;
+    margin-top: 3%;
+  }
+
+  .container2 p {
+    text-align: left;
+    padding: 2% 0;
+    margin-left: 2%;
+    margin: 0 5%;
+  }
+
+  .container2 .all-card {
+    display: flex;
+    flex-direction: row;
+    margin: 0 4%;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin-right: 5%;
+    text-align: left;
+  }
+
+  .all-card h3 {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 8%;
+  }
+
+  .card img {
+    margin-left: 6%;
+    padding-top: 8%;
+  }
+
+  .card p {
+    margin-bottom: 25%;
+  }
+
+  /* container3 */
+
+  .container3 {
+    text-align: left;
+  }
+
+  .container3 .allCards {
+    display: flex;
+    flex-direction: row;
+    margin: 0 4%;
+    text-align: left;
+  }
+
+  .cards h3 {
+    margin-left: -7%;
+  }
+
+  .cards p {
+    margin-left: -7%;
+    margin-bottom: 2%;
+  }
+
+  .container3 h1 {
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+
+  .cards{
+    margin-right: 12px;
+    background: var(--light-grayish-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .cards img{
+    margin-top: 6%;
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .part-1 {
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  .footer-logo {
+    margin-bottom: 10%;
+    margin-top: -3%;
+  }
+
+  .information-1 {
+    text-align: left;
+    padding-top: 1%;
+    margin-top: 0;
+  }
+
+  .information-2 {
+    text-align: left;
+    padding-top: 1%;
+    margin-top: 0;
+  }
+  .last {
+    text-align: right;
+    margin-right: 3.2%;
+    margin-top: -0.1%;
+  }
+
+  .last .btn {
+    margin-bottom: -2%;
+    margin-right: 10%;
+  }
+}
