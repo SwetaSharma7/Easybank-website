@@ -219,6 +219,14 @@ h3 {
   text-align: left;
 }
 
+.container3 .allCards .cards{
+  text-align: left;
+  color: var(--grayish-blue);
+}
+.cards small{
+  margin-left: 12%;
+}
+
 /* footer */
 
 footer {
@@ -341,8 +349,9 @@ footer p {
     margin-left: -30px;
     margin-right: 10%;
   }
-  .info .first {
+  .container1.info .first {
     margin-left: -1%;
+    font-size: 1000px;
   }
 
   /* why choose Easybank part ---->>>>   */
