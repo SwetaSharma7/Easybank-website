@@ -56,7 +56,6 @@ header {
 }
 
 .dropdown-content {
-  background-color: white;
   text-align: center;
   background-color: aliceblue;
   height: auto;
@@ -68,14 +67,14 @@ header {
 }
 
 .dropdown-content a {
-  color: var(--dark-blue);
+  color: var(--grayish-blue);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  color: rgb(104, 134, 216);
+  color: var(--dark-blue);
 }
 
 /* next - gen digital banking part */
@@ -295,6 +294,10 @@ footer p {
     display: block;
     margin-top: -2%;
   }
+  .dropdown-content a:hover{
+    border-bottom: 3px solid rgb(20, 180, 20);
+    padding-bottom: 5%;
+  }
 
   header {
     display: flex;
@@ -444,6 +447,10 @@ footer p {
     margin-top: 6%;
   }
 
+  .cards h3:hover{
+    color: rgb(58, 189, 25);
+  }
+
   /* footer */
 
   footer {
@@ -466,7 +473,7 @@ footer p {
   }
 
   .connect .img:hover {
-    fill: rgb(31, 218, 31);
+    fill: rgb(12, 155, 12);
   }
 
   .information-1 {
@@ -475,12 +482,18 @@ footer p {
     margin-top: 0;
     margin-left: -15%;
   }
+  .information-1 div:hover{
+    color: rgb(12, 155, 12);
+  }
 
   .information-2 {
     text-align: left;
     padding-top: 1%;
     margin-top: 0;
     margin-left: -15%;
+  }
+  .information-2 div:hover{
+    color: rgb(12, 155, 12);
   }
 
   .last {
